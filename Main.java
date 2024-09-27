@@ -2,12 +2,19 @@ public class Main
 {
     public static void main(String[] args)
     {
+        Feeder f = new Feeder(500);
+        System.out.println(f.getCurrentFood());
+        f.simulateOneDay(12);
+        System.out.println(f.toString());
 
-        Feeder f = new Feeder();
-        System.out.println(f);
-        Feeder g = new Feeder(500);
-        System.out.println(g.getCurrentFood());
-        g.simulateOneDay(12);
+
+
+
+        feeder g = new Feeder(1000)
+        //System.out.println(g.getCurren)
+
+
+
 
 
 
@@ -36,12 +43,3 @@ public class Main
    
     }
 }
-
-
-
-
-
-
-
-
-
