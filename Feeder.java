@@ -1,5 +1,8 @@
 public class Feeder {
     private int currentFood;
+
+
+    public int getCurrentFood()
     {
         return currentFood;
     }
@@ -15,7 +18,7 @@ public class Feeder {
         }
 
     }
-    pulic int simulateManyDays( int numBirds, int numDays)
+    public int simulateManyDays( int numBirds, int numDays)
     {
         int days = 0;
         while(numDays > 0)
@@ -23,11 +26,11 @@ public class Feeder {
             if(currentFood == 0) return days;
             simulateOneDay(numBirds);
             days++;
-            numDays--:
+            numDays--;
         }
         return days;
     }
-    public Feededer(int c)
+    public Feeder(int c)
     {
         currentFood = c;
     }
